@@ -1,9 +1,19 @@
 'use client';
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const Footer = () => {
-    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+    const { theme } = useTheme();
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return null;
+    }
 
     return (
         <footer className="max-w-6xl mx-auto px-4 pt-10">
