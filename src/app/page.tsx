@@ -1,5 +1,8 @@
 import { ExperienceSection } from "./components/ExperienceSection";
 import { HeroSection } from "./components/HeroSection";
+import { LatestCodeSection } from "./components/LatestCodeSection";
+import { ProjectsSection } from "./components/ProjectsSection";
+import { ReachOutSection } from "./components/ReachOutSection";
 import { WhoAmISection } from "./components/WhoAmISection";
 
 export default function Home() {
@@ -8,9 +11,9 @@ export default function Home() {
       <HeroSection />
       <WhoAmISection />
       <ExperienceSection />
-      {/* Projects */}
-      {/* Latest Code */}
-      {/* Reach Out */}
+      <ProjectsSection />
+      <LatestCodeSection />
+      <ReachOutSection />
     </main>
   );
 }
