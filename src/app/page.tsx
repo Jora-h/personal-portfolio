@@ -12,7 +12,7 @@ export default function Home() {
       <WhoAmISection />
       <ExperienceSection />
       <ProjectsSection />
-      <LatestCodeSection />
+      {/* <LatestCodeSection /> */}
       <ReachOutSection />
     </main>
   );
